@@ -19,9 +19,9 @@ try:
     z = calc(x)     #number to be selected from the list
 
     input = browser.find_element(By.TAG_NAME, "select")     #"TAG_NAME" searches the text between two tags
-    input.send_keys(z)
+    input.send_keys(z)                                      
 
-    finalclick = browser.find_element(By.TAG_NAME, "button")
+    finalclick = browser.find_element(By.TAG_NAME, "button")    #search for and press the button
     finalclick.click()
 
 finally:
