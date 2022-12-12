@@ -41,5 +41,4 @@ try:
 finally:
 
     time.sleep(15)
-
     browser.quit()
