@@ -14,14 +14,14 @@ try:
     buttom1 = browser.find_element(By.CSS_SELECTOR, "body > form > div > div > button")
     buttom1.click()
 
-    confirm = browser.switch_to.alert       #переключаемся на всплывающее окно и соглашаемся
+    confirm = browser.switch_to.alert       #switch to the pop-up window and agree
     confirm.accept()
 
-    x_element = browser.find_element(By.ID, "input_value")
+    x_element = browser.find_element(By.ID, "input_value")       #pick up the desired value on the page                   
     x = x_element.text
     y = calc(x)
 
-    input2 = browser.find_element(By.CSS_SELECTOR, "#answer")                    #enter the calculated value
+    input2 = browser.find_element(By.CSS_SELECTOR, "#answer")    #enter the calculated value
     input2.send_keys(y)
 
     finalclick = browser.find_element(By.XPATH, "/html/body/form/div/div/button")
