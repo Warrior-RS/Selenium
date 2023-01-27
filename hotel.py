@@ -1,3 +1,16 @@
+#     http://suninjuly.github.io/explicit_wait2.html
+#Task: waiting for the right text on the page
+#Now let's try to write a program that will book our holiday home at a strictly set price. A higher price is not good enough, and someone else will book the property at a lower price.
+
+#In this task you have to write a program that will execute the following scenario:
+
+#Open the page http://suninjuly.github.io/explicit_wait2.html
+#Wait until the price of the house goes down to $100 (wait at least 12 seconds)
+#Click on the "Book" button.
+#Solve the math problem we already know (use the code you wrote earlier) and submit the solution
+#To determine the moment when the rental price drops to $100, use text_to_be_present_in_element method from expected_conditions library.
+
+
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
